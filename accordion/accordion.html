@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="//cloud.typography.com/75214/6517752/css/fonts.css" media="all"/>
+    <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.css"/>
+    <script async src="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.js"></script>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <meta charset="UTF-8">
+    <title>Components</title>
+</head>
+<style>
+</style>
+<body>
+<byu-header>
+    <span slot="site-title">Straight HTML</span>
+    <byu-user-info slot="user" login-url="#login">
+        <a slot="login" href="#login">Sign In</a>
+        <a slot="logout" href="#logout">Sign Out</a>
+        <span slot="user-name">UserFirstName</span>
+    </byu-user-info>
+    <byu-search slot="search" onsearch="demoSearch"></byu-search>
+    <byu-menu slot="nav" collapsed>
+        <a class="selected" href="javascript: void 0">Link 1</a>
+        <a href="javascript: void 0">Link 2</a>
+        <a href="javascript: void 0">Link 3</a>
+        <a href="javascript: void 0">Link 4</a>
+        <a href="javascript: void 0">Link 5</a>
+        <a href="javascript: void 0">Link 6</a>
+        <a href="javascript: void 0">Link 7</a>
+        <a href="javascript: void 0">Link 8</a>
+        <a href="javascript: void 0">Link 9</a>
+        <a href="javascript: void 0">Link 10</a>
+    </byu-menu>
+</byu-header>
+
+<div class="page-content">
+    <h1>Components</h1>
+    <p>This is a baseline site I use to see if there is a problem with a Drupal theme or components.</p>
+    <h1>Accordion Demo</h1>
+    <button class="byu-accordion">Wordpress</button>
+    <div class="byu-accordion-panel">
+        <p>If you're using Wordpress, a custom parent theme has been created to allow for full implementation of the byu
+            components. This theme includes easy backend input for both the header and footer, and allows for complete
+            customization of site content.
+            A child theme has also been developed and made available as well, for those who would prefer to customize
+            their header and footer display for their department. Developed by Publications & Graphics.</p>
+    </div>
+
+    <button class="byu-accordion">Drupal Bootstrap</button>
+    <div class="byu-accordion-panel">
+        <p>The Drupal Bootstrap theme is based off of the Bootstrap theme, giving you the flexibility and default
+            styling that comes from Twitter's Bootstrap. It also can use modules developed specifically for that theme
+            and most of the styling grunt work has
+            already been done for you. If you use this theme, it's important to know that it does not use the
+            components, it just recreates them. So, you'll need to be sure you keep the theme update so it matches with
+            the components. Developed by SAAS.</p>
+    </div>
+
+    <button class="byu-accordion">Drupal Zurb Foundation</button>
+    <div class="byu-accordion-panel">
+        <p>This is a Drupal sub-theme based on the ZURB Foundation theme. It includes a grid system as well as options
+            to easily edit BYU header features, fonts, and font colors. This theme makes it very easy to customize how
+            your content is displayed with not
+            fear of messing up the components. Also, because this theme pulls in the components from the web community,
+            you're site will always have the latest component updates. Developed by OIT.</p>
+    </div>
+</div>
+
+<byu-footer>
+    <byu-footer-column>
+        <span slot="header">Contact</span>
+        <p>
+            BYU Speeches
+            <br> 701 East University Parkway
+            <br> Provo, Utah 84602
+            <br> 888-888-8888
+        </p>
+        <byu-footer-action-button>
+            <a href="https://www.google.com" slot="actiontext">GIVE to Speeches</a>
+        </byu-footer-action-button>
+    </byu-footer-column>
+    <byu-footer-column>
+        <span slot="header">Affiliated Speeches</span>
+        <a href="https://www.byui.edu">BYU-Idaho Speeches</a>
+        <br>
+        <a href="https://www.byuh.edu">BYU-Hawaii Speeches</a>
+        <br>
+        <a href="https://womensconference.byu.edu">Women's Conference</a>
+        <br>
+        <a href="https://kennedy.byu.edu/lectures">Kennedy Center Lectures</a>
+        <br>
+        <a href="https://wheatley.byu.edu/">Wheatley Institution</a>
+    </byu-footer-column>
+    <byu-footer-column>
+        <span slot="header">Related Links</span>
+        <a>LDS.org</a>
+        <br>
+        <a>BYU Alumni</a>
+        <br>
+        <a>BYU Today</a>
+        <br>
+        <a>BYU Magazine</a>
+    </byu-footer-column>
+    <byu-footer-column>
+        <span slot="header">Connect With Us</span>
+        <a>Feedback</a>
+        <br>
+        <a>Help</a>
+        <br>
+        <a>Follow BYU Speeches</a>
+        <br>
+        <byu-social-media-links>
+            <!--Note: These all have text that will be hidden. The text should be there to help screen readers.-->
+            <a class="facebook" href="https://www.facebook.com">Facebook</a>
+            <a class="instagram" href="https://www.instagram.com">Instagram</a>
+            <a class="twitter" href="https://www.twitter.com">Twitter</a>
+            <a class="gplus" href="https://plus.google.com">Google Plus</a>
+            <a class="linkedin" href="https://www.linkedin.com">Linkedin</a>
+            <a class="youtube" href="https://www.youtube.com">YouTube</a>
+        </byu-social-media-links>
+        <br>
+        <a>Subscribe</a>
+    </byu-footer-column>
+</byu-footer>
+</body>
+</html>
